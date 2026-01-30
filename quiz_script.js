@@ -1,3 +1,9 @@
+function initQuiz() {
+    console.log("Quiz loaded");
+}
+
+initQuiz();
+
 const allElements = [
             {name: "Hydrogen", symbol: "H", number: 1, period: 1, group: 1, block: "s", alkali: false, alkaline: false, transition: false, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: true},
             {name: "Helium", symbol: "He", number: 2, period: 1, group: 18, block: "s", alkali: false, alkaline: false, transition: false, postTransition: false, metalloid: false, halogen: false, noble: true, lanthanide: false, actinide: false, nonmetal: true},
