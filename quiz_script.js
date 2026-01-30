@@ -136,91 +136,91 @@ const allElements = [
             document.getElementById("submit").disabled = false
             document.getElementById("answer").value = ""
             document.getElementById("feedback").innerHTML = ""
-            if (quiz=="alkali"){
+            if (quiz == "alkali"){
                 for (let element of allElements){
                     if (element.alkali){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Alkali Metals:"
-            } else if (quiz=="alkaline"){
+            } else if (quiz == "alkaline"){
                 for (let element of allElements){
                     if (element.alkaline){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Alkaline Earth Metals:"
-            } else if (quiz=="transition"){
+            } else if (quiz == "transition"){
                 for (let element of allElements){
                     if (element.transition){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Transition Metals:"
-            } else if (quiz=="post"){
+            } else if (quiz == "post"){
                 for (let element of allElements){
                     if (element.postTransition){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Post Transition Metals:"
-            } else if (quiz=="halogen"){
+            } else if (quiz == "halogen"){
                 for (let element of allElements){
                     if (element.halogen){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Halogens:"
-            } else if (quiz=="noble"){
+            } else if (quiz == "noble"){
                 for (let element of allElements){
                     if (element.noble){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Noble Gases:"
-            } else if (quiz=="lanthanide"){
+            } else if (quiz == "lanthanide"){
                 for (let element of allElements){
                     if (element.lanthanide){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Lanthanides:"
-            } else if (quiz=="actinide"){
+            } else if (quiz == "actinide"){
                 for (let element of allElements){
                     if (element.actinide){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Actinides:"
-            } else if (quiz=="sblock"){
+            } else if (quiz == "sblock"){
                 for (let element of allElements){
-                    if (element.block=="s"){
+                    if (element.block == "s"){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="S-block Elements:"
-            } else if (quiz=="fblock"){
+            } else if (quiz == "fblock"){
                 for (let element of allElements){
-                    if (element.block=="f"){
+                    if (element.block == "f"){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="F-block Elements:"
-            } else if (quiz=="pblock"){
+            } else if (quiz == "pblock"){
                 for (let element of allElements){
-                    if (element.block=="p"){
+                    if (element.block == "p"){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="P-block Elements:"
-            } else if (quiz=="metalloids"){
+            } else if (quiz == "metalloids"){
                 for (let element of allElements){
                     if (element.metalloid){
                         quizElements.push(element)
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Metalloids:"
-            } else if (quiz=="nonmetals"){
+            } else if (quiz == "nonmetals"){
                 for (let element of allElements){
                     if (element.nonmetal){
                         quizElements.push(element)
