@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Elements Quiz
     </title>
@@ -9,7 +9,7 @@
         body {
             background: #eef;
             padding: 10px;
-            text-align:  center; 
+            text-align:  center;
         }
 
         h1 {
@@ -37,7 +37,7 @@
         }
 
         div.mycontainer div {
-            width:33%;  
+            width:33%;
             float:left;
         }
 
@@ -118,8 +118,8 @@
         <input type="text" id="answer" placeholder="Enter atomic number" />
         <span id="question-counter">1/118</span>
     </div>
-    
-    
+
+
     <br>
     <button id="next" onclick=nextQuestion() disabled>Next</button>
     <button id="submit" onclick=checkAnswer()>Submit</button>
@@ -156,14 +156,14 @@
             {name: "Cobalt", symbol: "Co", number: 27, period: 4, group: 9, block: "d", alkali: false, alkaline: false, transition: true, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
             {name: "Nickel", symbol: "Ni", number: 28, period: 4, group: 10, block: "d", alkali: false, alkaline: false, transition: true, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
             {name: "Copper", symbol: "Cu", number: 29, period: 4, group: 11, block: "d", alkali: false, alkaline: false, transition: true, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
-            {name: "Zinc", symbol: "Zi", number: 30, period: 4, group: 12, block: "d", alkali: false, alkaline: false, transition: true, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
+            {name: "Zinc", symbol: "Zn", number: 30, period: 4, group: 12, block: "d", alkali: false, alkaline: false, transition: true, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
             {name: "Gallium", symbol: "Ga", number: 31, period: 4, group: 13, block: "p", alkali: false, alkaline: false, transition: false, postTransition: true, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
             {name: "Germanium", symbol: "Ge", number: 32, period: 4, group: 14, block: "p", alkali: false, alkaline: false, transition: false, postTransition: false, metalloid: true, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: true},
             {name: "Arsenic", symbol: "As", number: 33, period: 4, group: 15, block: "p", alkali: false, alkaline: false, transition: false, postTransition: false, metalloid: true, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: true},
             {name: "Selenium", symbol: "Se", number: 34, period: 4, group: 16, block: "p", alkali: false, alkaline: false, transition: false, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: true},
             {name: "Bromine", symbol: "Br", number: 35, period: 4, group: 17, block: "p", alkali: false, alkaline: false, transition: false, postTransition: false, metalloid: false, halogen: true, noble: false, lanthanide: false, actinide: false, nonmetal: true},
             {name: "Krypton", symbol: "Kr", number: 36, period: 4, group: 18, block: "p", alkali: false, alkaline: false, transition: false, postTransition: false, metalloid: false, halogen: false, noble: true, lanthanide: false, actinide: false, nonmetal: false},
-            {name: "Rubidium", symbol: "Rd", number: 37, period: 5, group: 1, block: "s", alkali: true, alkaline: false, transition: false, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
+            {name: "Rubidium", symbol: "Rb", number: 37, period: 5, group: 1, block: "s", alkali: true, alkaline: false, transition: false, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
             {name: "Strontium", symbol: "Sr", number: 38, period: 5, group: 2, block: "s", alkali: false, alkaline: true, transition: false, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
             {name: "Yttrium", symbol: "Y", number: 39, period: 5, group: 3, block: "d", alkali: false, alkaline: false, transition: true, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
             {name: "Zirconium", symbol: "Zr", number: 40, period: 5, group: 4, block: "d", alkali: false, alkaline: false, transition: true, postTransition: false, metalloid: false, halogen: false, noble: false, lanthanide: false, actinide: false, nonmetal: false},
@@ -342,7 +342,7 @@
                     }
                 }
                 document.getElementById("quiz-type").innerHTML="Metalloids:"
-            } else if (quiz=="nonmentals"){
+            } else if (quiz=="nonmetals"){
                 for (let element of allElements){
                     if (element.nonmetal){
                         quizElements.push(element)
@@ -367,10 +367,10 @@
                 document.getElementById("submit").disabled = true
             }
             currentElement = elements[ElementId];
-            elements.splice(ElementId, 1);        
+            elements.splice(ElementId, 1);
             return currentElement
         }
-        
+
 
         function setElement(currentElement){
             document.getElementById("element-name").innerHTML = currentElement.name
